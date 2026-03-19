@@ -10,8 +10,10 @@ jobs:
     steps:
       - name: Buoc 1 -xin chao
         run: echo "hello word"
+        
       - name: Buoc 2 - tai code
-        uses: action/checkout@v6
+        uses: action/checkout@v6.0.2
+        
       - name: Buoc 3 - doc file
         run: cat README.md
           
