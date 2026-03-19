@@ -1,6 +1,7 @@
 name: Dem Read file Readme
-on: 
-  push :
+
+on:
+  push:
     branches: ["main"]
 
 jobs:
@@ -8,15 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Buoc 1 -xin chao
-        run: echo "hello word"
+      - name: Buoc 1 - xin chao
+        run: echo "hello world"
         
       - name: Buoc 2 - tai code
-        uses: action/checkout@v6.0.2
+        uses: actions/checkout@v4
         
       - name: Buoc 3 - doc file
         run: cat README.md
-          
-        
-        
-
