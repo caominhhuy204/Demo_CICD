@@ -1,0 +1,20 @@
+name: Dem Read file Readme
+on: 
+  push :
+    branches: ["main"]
+
+jobs:
+  Thuc_hanh_doc_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Buoc 1 -xin chao
+        run: echo "hello word"
+      - name: Buoc 2 - tai code
+        uses: action/checkout@v6
+      - name: Buoc 3 - doc file
+        run: cat README.md
+          
+        
+        
+
